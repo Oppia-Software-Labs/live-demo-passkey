@@ -303,9 +303,36 @@ export default function ClickAuthPage() {
 ## 10) Correr el proyecto / Run the project
 
 ```bash
+cd demo
 npm run dev
 # Visit http://localhost:3000
 ```
+
+---
+
+## 11) Deploy en Vercel / Deploy to Vercel
+
+**ES:** Este proyecto está configurado para deployar automáticamente en Vercel. El archivo `vercel.json` especifica que el proyecto Next.js está en el directorio `demo/`.  
+**EN:** This project is configured to deploy automatically on Vercel. The `vercel.json` file specifies that the Next.js project is in the `demo/` directory.
+
+### Opciones de deploy / Deployment options:
+
+1. **Deploy automático desde GitHub / Automatic deploy from GitHub:**
+   - Conecta tu repositorio a Vercel
+   - Vercel detectará automáticamente la configuración
+
+2. **Deploy manual / Manual deploy:**
+   ```bash
+   # Instalar Vercel CLI
+   npm i -g vercel
+   
+   # Desde el root del repositorio
+   vercel
+   ```
+
+3. **Variables de entorno en Vercel / Environment variables in Vercel:**
+   - Añade todas las variables de entorno en el dashboard de Vercel
+   - Las variables deben empezar con `NEXT_PUBLIC_`
 
 ---
 
