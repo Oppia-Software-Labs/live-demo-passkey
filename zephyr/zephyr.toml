@@ -1,0 +1,35 @@
+name = "smart-wallets-next-dima"
+
+[[tables]]
+name = "signers"
+force = false
+
+[[tables.columns]]
+name = "address"
+col_type = "BYTEA"
+index = true
+
+[[tables.columns]]
+name = "key"
+col_type = "BYTEA"
+index = true
+
+[[tables.columns]]
+name = "val"
+col_type = "BYTEA"
+
+[[tables.columns]]
+name = "limits"
+col_type = "BYTEA"
+
+[[tables.columns]]
+name = "exp"
+col_type = "BIGINT"
+
+[[tables.columns]]
+name = "storage"
+col_type = "BYTEA"
+
+[[tables.columns]]
+name = "active"
+col_type = "BYTEA"
